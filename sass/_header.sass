@@ -1,0 +1,85 @@
+header
+    position: fixed
+    width: 100%
+    height: 100px
+    background-color: #0c1239
+    top: 0
+    left: 0
+    z-index: 100
+.header
+    display: flex
+    align-items: center
+    height: 100px
+    justify-content: space-between
+    &_phone 
+        width: 540px
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        align-items: center
+        a
+            font-size: 25px
+            color: $orange
+            text-decoration: none
+            font-family: $stolzl_reg
+            transition: 0.3s
+            &:hover
+                color: white
+.navList
+    position: absolute
+    padding-top: 30px
+    padding-bottom: 30px
+    border-bottom: 1px solid $border
+    width: 70%
+    left: 50%
+    transform: translateX(-50%)
+    transition: 0.5s
+    ul
+        display: flex
+        list-style-type: none
+        width: 100%
+        justify-content: center
+        li
+            font-family: stolzl-reg
+            font-size: 17px
+            margin-right: 6%
+            a
+                color: white
+                text-decoration: none
+                text-transform: uppercase
+                transition: 0.3s
+                &:hover
+                    color: $orange
+@media (max-width: 1200px)
+    .navList 
+        width: 95%
+@media (max-width: 992px)
+    .header
+        &_phone
+            justify-content: flex-end
+            img
+                display: none
+    .navList
+        ul
+            justify-content: space-between
+            li
+                margin: 0
+@media (max-width: 768px)
+    .header
+        img
+            width: 40%
+        &_phone 
+            a
+                font-size: 22px
+    .navList
+        padding-left: 10%
+        height: 300px   
+        width: 100%
+        background: rgba(0, 0, 0, 0.7)
+        ul
+            height: 100%
+            flex-direction: column
+            align-content: space-around
+            li
+                           
+@media (max-width: 576px)
