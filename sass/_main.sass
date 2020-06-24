@@ -1,4 +1,3 @@
-
 main
     padding-top: 100px                    
 .slides
@@ -43,3 +42,34 @@ main
     background: url(../img/main/bg_text.png) no-repeat
     background-size: cover
     width: 100%
+
+@media (max-width:1200px)
+    .slides
+        &_headers
+            transform: translate(-43%, -62%)
+            font-size: 65px 
+        &_btn
+            left: 7% 
+@media (max-width:992px)
+    .slides
+        &_headers
+            font-size: 55px 
+@media (max-width: 768px)
+    .slides
+        height: 550px
+        &_headers
+            font-size: 42px  
+            transform: translate(-43%, -100%)  
+        &_btn
+            bottom: 15%          
+@media (max-width: 560px)  
+    .slides
+        &_headers
+            font-size: 32px       
+@media (max-width: 560px)
+    .slides
+        height: 450px
+        &_headers
+            font-size: 26px
+        &_btn
+            padding: 20px 30px    

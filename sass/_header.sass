@@ -11,6 +11,7 @@ header
     align-items: center
     height: 100px
     justify-content: space-between
+    z-index: 10
     &_phone 
         width: 540px
         display: flex
@@ -30,16 +31,34 @@ header
     padding-top: 30px
     padding-bottom: 30px
     border-bottom: 1px solid $border
-    width: 70%
+    width: 1400px
     left: 50%
-    transform: translateX(-50%)
+    transform: translate(-50%, 0)
     transition: 0.5s
+    z-index: -1
+    &_li
+        position: relative 
+        &::after
+            position: absolute
+            content: ''
+            width: 5px
+            height: 5px
+            background-color: $orange
+            border-radius: 50px
+            right: -46px
+            top: 50%
+            transform: translateY(-50%)
+        &:nth-child(5)
+            &::after
+                display: none     
+                
     ul
         display: flex
         list-style-type: none
         width: 100%
         justify-content: center
         li
+            position: relative
             font-family: stolzl-reg
             font-size: 17px
             margin-right: 6%
@@ -50,9 +69,15 @@ header
                 transition: 0.3s
                 &:hover
                     color: $orange
+
+    .active_menu
+        transform: translate(-50%, 0)                
 @media (max-width: 1200px)
     .navList 
-        width: 95%
+        width: 992px
+        &_li
+            &::after
+                right: -33px
 @media (max-width: 992px)
     .header
         &_phone
@@ -60,6 +85,7 @@ header
             img
                 display: none
     .navList
+        width: 768px
         ul
             justify-content: space-between
             li
@@ -67,19 +93,77 @@ header
 @media (max-width: 768px)
     .header
         img
-            width: 40%
+            display: none
         &_phone 
+            width: 50%  
             a
                 font-size: 22px
+        &_menu
+            position: relative
+            width: 60px
+            height: 25px
+            border: none
+            outline: none
+            background: transparent
+            transition: 0.5s
+            span
+                position: absolute
+                width: 40px
+                height: 3px
+                background: white
+                top: 50%
+                left: 0
+                transform: translateY(-50%)
+                transition: 0.5s
+            &::after
+                position: absolute
+                content: ''
+                width: 40px
+                height: 3px
+                background: white
+                top: 0
+                left: 0
+                transition: 0.5s
+            &::before
+                position: absolute
+                content: ''
+                width: 40px
+                height: 3px
+                background: white
+                bottom: 0
+                left: 0
+                transition: 0.5s
+    .active
+        span
+            opacity: 0
+        &::after
+            top: 50%
+            transform: translateY(-50%) rotate(45deg)  
+           
+        &::before
+            bottom: 50%  
+            transform: translateY(50%) rotate(-45deg)  
+                
+    .active_menu
+        transform: translate(-150%, 0%)
     .navList
         padding-left: 10%
         height: 300px   
         width: 100%
-        background: rgba(0, 0, 0, 0.7)
+        background: rgba(0, 0, 0, 0.9)
+        &_li
+            &::after
+                right: 105%
+            &:nth-child(5)
+                &:after
+                    display: block    
+                    
         ul
             height: 100%
             flex-direction: column
             align-content: space-around
-            li
-                           
-@media (max-width: 576px)
+            li                           
+@media (max-width: 480px)
+    .header
+        &_phone
+            width: 80%
