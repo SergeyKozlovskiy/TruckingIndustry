@@ -1,0 +1,59 @@
+.benefits_header
+    padding-left: 100px  
+    position: relative
+    &:after
+        position: absolute
+        content: ''
+        width: 60px
+        height: 2px
+        background-color: $orange
+        left: 0
+        top: 50%
+        transform: translateY(-50%)
+.benefits
+    display: flex
+    margin-top: 40px
+    flex-wrap: wrap
+    text-align: center
+    align-items: center
+    justify-content: space-between
+    &_block
+        position: relative
+        display: flex
+        align-items: center
+        flex-direction: column
+        width: 360px
+        height: 350px
+        padding: 20px 10px 0 10px
+        overflow: hidden
+        border-radius: 7px
+        margin-bottom: 15px
+        z-index: 1
+        p, h3
+            font-family: $stolzl_reg
+            font-size: 25px 
+        h3, img
+            color: $orange 
+            margin-bottom: 10px 
+.wrapper
+    position: absolute
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 100%
+    height: 100%
+    top: 0
+    right: 0
+    left: 0
+    bottom: 0
+    background: url(../img/benefits/bg.png) bottom no-repeat 
+    background-size: cover
+    z-index: 100
+    color: $orange 
+    font-family: $stolzl_reg
+    font-size: 25px
+    opacity: 1
+    transition: 0.5s
+    cursor: pointer
+    &:hover 
+        opacity: 0          
