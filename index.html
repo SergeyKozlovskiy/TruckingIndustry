@@ -26,7 +26,6 @@
       </div>
     </div>
   </header>
-
   <!-- Menu -->
   <nav class="navList active_menu">
     <ul>
@@ -91,6 +90,7 @@
       </div>
     </div>
   </section>
+  <!-- Benefits -->
   <section>
 <div class="container">
   <h2 class="headers benefits_header">наши преимущества</h2>
@@ -135,19 +135,96 @@
   </div>
 </div>
   </section>
+  <!-- Autopark -->
+  <section>
+    <div class="container">
+      <h2 class="headers benefits_header">автопарк</h2>
+      <div class="cars">
+
+        <div class="cars_block">
+          <p class="cars_blockHeader">Газель <span class="boldText">3-х местная</span></p>
+          <div class="cars_blockSize">
+            <p>Длина <span class="boldText">4.20м</span></p>
+            <p>Высота <span class="boldText">2.20м</span> </p>
+            <p>Ширина <span class="boldText">2м</span></p>
+            <p>Объем <span class="boldText">19м<sup><small>3</small></sup></span></p>
+          </div>
+          <img src="./img/cars/1.png" alt="Газель 3-х местная">
+        </div>
+
+        <div class="cars_block">
+          <p class="cars_blockHeader">Газель <span class="boldText">6-ти местная</span></p>
+          <div class="cars_blockSize">
+            <p>Длина <span class="boldText">4.20м</span></p>
+            <p>Высота <span class="boldText">2.20м</span></p>
+            <p>Ширина <span class="boldText">2м</span></p>
+            <p>Объем <span class="boldText">19м<sup><small>3</small></sup></span></p>
+          </div>
+          <img src="./img/cars/2.png" alt="Газель 6-ти местная">
+        </div>
+
+        <div class="cars_block">
+          <p class="cars_blockHeader">Газель <span class="boldText">6-ти местная</span></p>
+          <div class="cars_blockSize">
+            <p>Длина <span class="boldText">5.20м</span></p>
+            <p>Высота <span class="boldText">2.30м</span></p>
+            <p>Ширина <span class="boldText">2м</span></p>
+            <p>Объем <span class="boldText">23м<sup><small>3</small></sup></span></p>
+          </div>
+          <img src="./img/cars/3.png" alt="Газель 6-ти местная">
+        </div>
+
+        <div class="cars_block">
+          <p class="cars_blockHeader">Валдай <span class="boldText">3-х местная</p>
+          <div class="cars_blockSize">
+            <p>Длина <span class="boldText">6.20м</span></p>
+            <p>Высота <span class="boldText">2.70м</span></p>
+            <p>Ширина <span class="boldText">2.4м</span></p>
+            <p>Объем <span class="boldText">40м<sup><small>3</small></sup></span></p>
+          </div>
+          <img src="./img/cars/4.png" alt="Газель 3-х местная">
+        </div>
+      </div>
+    </div>
+  </section>
 
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script src="./js/slick.min.js"></script>
   <script type="text/javascript">
-    // $(document).ready(function () {
-    //   $(".main_slider").slick({
-    //     slidesToShow: 1,
-    //     slidesToScroll: 1,
-    //     autoplay: true,
-    //     autoplaySpeed: 3000,
-    //     arrows: false
-    //   });
-    // });
+    $(document).ready(function () {
+      $(".main_slider").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        arrows: false
+      });
+    });
+    $(document).ready(function () {
+      $(".benefits").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        arrows: false,
+        responsive: [
+        {
+          breakpoint: 470,
+          settings: "slick"
+        },
+        {
+          breakpoint: 4000,
+          settings: "unslick"
+        }
+        ]
+              });
+            });
+  </script>
+  <script>
+    var wrapper = document.querySelectorAll('.wrapper');
+    wrapper.forEach((el, i) => {
+      el.style.background = `url(../img/benefits/${i}.png) bottom no-repeat`;
+    })
   </script>
   <script src="./js/main.js"></script>
 </body>

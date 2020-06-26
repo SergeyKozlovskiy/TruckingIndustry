@@ -46,7 +46,7 @@
     right: 0
     left: 0
     bottom: 0
-    background: url(../img/benefits/bg.png) bottom no-repeat 
+    background: url(../img/benefits/1.png) bottom no-repeat 
     background-size: cover
     z-index: 100
     color: $orange 
@@ -55,5 +55,51 @@
     opacity: 1
     transition: 0.5s
     cursor: pointer
+    text-transform: uppercase                
     &:hover 
-        opacity: 0          
+        opacity: 0 
+
+@media (max-width: 1200px)
+    .benefits
+        justify-content: center
+        &_block
+            &:nth-child(odd)
+                margin-right: 15px
+@media (max-width: 992px)                
+    .benefits
+        &_block
+            width: 310px
+            height: 300px
+            img
+                height: 70px
+            p, h3, .wrapper 
+                font-size: 22px
+@media (max-width: 768px) 
+    .benefits
+        &_block
+            width: 247px
+            height: 247px  
+            img
+                height: 60px
+            p, h3, .wrapper 
+                font-size: 18px 
+@media (max-width: 560px)  
+    .benefits
+        &_header
+            padding-left: 0
+            text-align: center
+            &::after
+                display: none
+        &_block
+            &:nth-child(odd)
+                margin-right: 0px 
+@media (max-width: 470px)  
+    .benefits
+        display: block
+        &_block
+                margin-right: 10px !important
+                margin-left: 10px  !important
+                img
+                    margin: 0 auto                                       
+
+                

@@ -1,0 +1,36 @@
+.cars
+    display: flex
+    flex-wrap: wrap
+    &_block
+        margin-top: 30px
+        width: 50%
+        &Header
+            text-align: center
+            font-family: $stolzl_light
+            font-size: 25px
+            margin-bottom: 30px
+        &Size
+            position: relative
+            margin: 0 auto
+            display: grid
+            grid-template-columns: 1fr 1fr
+            width: 430px
+            margin-bottom: 30px
+            &::after
+                position: absolute
+                content: ''
+                width: 2px
+                height: 50px
+                background-color: $orange
+                top: 50%
+                left: 45%
+                transform: translateY(-50%)
+            p
+                font-family: $stolzl_light
+                font-size: 25px
+        img
+            display: block
+            margin: 0 auto        
+.boldText
+    font-family: $stolzl_bold
+    color: $colorHeader             
