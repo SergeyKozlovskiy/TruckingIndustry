@@ -33,4 +33,18 @@
             margin: 0 auto        
 .boldText
     font-family: $stolzl_bold
-    color: $colorHeader             
+    color: $colorHeader 
+
+
+@media (max-width: 1200px)
+    .cars
+        &_block
+            img
+                width: 70%
+@media (max-width: 768px)    
+    .cars
+        &_block
+            &Size
+                width: 300px
+            p
+                font-size: 18px            

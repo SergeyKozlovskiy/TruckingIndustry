@@ -1,0 +1,68 @@
+#services
+    background: url(../img/services/bg.jpg) center no-repeat
+    background-size: cover
+.services_header
+    color: white
+.services
+    position: relative
+    margin-top: 90px
+    display: flex
+    justify-content: space-between
+    flex-wrap: nowrap
+    &_block
+        text-align: center
+        margin-bottom: 50px
+        img
+            height: 70px
+            margin-bottom: 10px 
+        p
+            font-size: 25px 
+            color: white
+            font-family: $stolzl_light
+    &::after
+        position: absolute
+        content: ''
+        width: 100%
+        border: 0.5px dashed $orange
+        top: 39.5%
+        left: 0
+.point
+    width: 10px
+    height: 10px
+    background-color: $orange
+    border-radius: 50px
+    margin: 0 auto 20px 
+    transition: 0.3s
+.scale
+    transform: scale(1.2) 
+
+@media (max-width: 1200px)
+    .services
+        &::after
+            top: 40.5%
+        &_block
+            p
+                font-size: 22px
+@media (max-width: 992px) 
+    .services
+        flex-wrap: wrap
+        &::after
+            display: none
+        &_block
+            width: 300px
+
+@media (max-width: 768px)  
+    .services
+        &_block
+            width: 255px 
+
+@media (max-width: 560px) 
+    .services
+        margin-top: 30px
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        &_block
+            p
+                font-size: 18px
+
