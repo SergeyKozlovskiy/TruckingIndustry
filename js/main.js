@@ -2,6 +2,17 @@ $('.header_menu').on('click', function (e) {
     $(this).toggleClass('active');
     $('.navList').toggleClass('active_menu');
 });
-var point = document.querySelectorAll('.point');
+$('.scroll-to').on('click', function (e) {
+    $('.navList').addClass('active_menu');
+    $('.header_menu').removeClass('active');
+});
 
-console.log(point);
+
+
+$("a.scroll-to").on("click", function (e) {
+    e.preventDefault();
+    var anchor = $(this).attr('href');
+    $('html, body').stop().animate({
+        scrollTop: $(anchor).offset().top - 60
+    }, 800);
+});

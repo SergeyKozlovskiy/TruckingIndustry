@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="./img/favicon/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="./css/slick.css" />
   <link rel="stylesheet" href="./css/slick-theme.css" />
   <link rel="stylesheet" href="./css/bootstrap-grid.min.css" />
@@ -29,11 +30,12 @@
   <!-- Menu -->
   <nav class="navList active_menu">
     <ul>
-      <li class="navList_li"><a href="#">Почему мы?</a></li>
-      <li class="navList_li"><a href="#">Наши преимущества</a></li>
-      <li class="navList_li"><a href="#">Автопарк</a></li>
-      <li class="navList_li"><a href="#">Цены</a></li>
-      <li class="navList_li"><a href="#">Отзывы</a></li>
+      <li class="navList_li"><a class="scroll-to" href="#advantageBlock">Почему мы?</a></li>
+      <li class="navList_li"><a class="scroll-to" href="#benefitsBlock">Наши преимущества</a></li>
+      <li class="navList_li"><a class="scroll-to" href="#autoparkBlock">Автопарк</a></li>
+      <li class="navList_li"><a class="scroll-to" href="#servicesBlock">Услуги</a></li>
+      <li class="navList_li"><a class="scroll-to" href="#priceBlock">Цены</a></li>
+      <li class="navList_li"><a class="scroll-to" href="#reviewsBlock">Отзывы</a></li>
     </ul>
   </nav>
   <!-- Main -->
@@ -65,7 +67,7 @@
     </div>
   </main>
   <!-- Advantage -->
-  <section>
+  <section id="advantageBlock">
     <div class="container">
       <div class="advantage_headerBlock">
         <h2 class="headers advantage_header">Почему мы?</h2>
@@ -91,7 +93,7 @@
     </div>
   </section>
   <!-- Benefits -->
-  <section>
+  <section id="benefitsBlock">
     <div class="container">
       <h2 class="headers benefits_header">наши преимущества</h2>
       <div class="benefits">
@@ -136,82 +138,82 @@
     </div>
   </section>
   <!-- Autopark -->
-  <section>
+  <section id="autoparkBlock">
     <div class="container">
       <h2 class="headers benefits_header">автопарк</h2>
     </div>
-      <div class="cars">
-      
-        <div class="cars_block">
-          <p class="cars_blockHeader">Газель <span class="boldText">3-х местная</span></p>
-          <div class="cars_blockSize">
-            <p>Длина <span class="boldText">4.20м</span></p>
-            <p>Высота <span class="boldText">2.20м</span> </p>
-            <p>Ширина <span class="boldText">2м</span></p>
-            <p>Объем <span class="boldText">19м<sup><small>3</small></sup></span></p>
-          </div>
-          <img src="./img/cars/1.png" alt="Газель 3-х местная">
-        </div>
+    <div class="cars">
 
-        <div class="cars_block">
-          <p class="cars_blockHeader">Газель <span class="boldText">6-ти местная</span></p>
-          <div class="cars_blockSize">
-            <p>Длина <span class="boldText">4.20м</span></p>
-            <p>Высота <span class="boldText">2.20м</span></p>
-            <p>Ширина <span class="boldText">2м</span></p>
-            <p>Объем <span class="boldText">19м<sup><small>3</small></sup></span></p>
-          </div>
-          <img src="./img/cars/2.png" alt="Газель 6-ти местная">
+      <div class="cars_block">
+        <p class="cars_blockHeader">Газель <span class="boldText">3-х местная</span></p>
+        <div class="cars_blockSize">
+          <p>Длина <span class="boldText">4.20м</span></p>
+          <p>Высота <span class="boldText">2.20м</span> </p>
+          <p>Ширина <span class="boldText">2м</span></p>
+          <p>Объем <span class="boldText">19м<sup><small>3</small></sup></span></p>
         </div>
-
-        <div class="cars_block">
-          <p class="cars_blockHeader">Газель <span class="boldText">3-x местная</span></p>
-          <div class="cars_blockSize">
-            <p>Длина <span class="boldText">2.37м</span></p>
-            <p>Высота <span class="boldText">1.90м</span></p>
-            <p>Ширина <span class="boldText">2м</span></p>
-            <p>Объем <span class="boldText">23м<sup><small>3</small></sup></span></p>
-          </div>
-          <img src="./img/cars/gazel_1.png" alt="Газель 3-x местная">
-        </div>
-
-        <div class="cars_block">
-          <p class="cars_blockHeader">Газель <span class="boldText">6-ти местная</span></p>
-          <div class="cars_blockSize">
-            <p>Длина <span class="boldText">5.20м</span></p>
-            <p>Высота <span class="boldText">2.30м</span></p>
-            <p>Ширина <span class="boldText">2м</span></p>
-            <p>Объем <span class="boldText">23м<sup><small>3</small></sup></span></p>
-          </div>
-          <img src="./img/cars/3.png" alt="Газель 6-ти местная">
-        </div>
-
-        <div class="cars_block">
-          <p class="cars_blockHeader">Валдай <span class="boldText">3-х местная</p>
-          <div class="cars_blockSize">
-            <p>Длина <span class="boldText">6.20м</span></p>
-            <p>Высота <span class="boldText">2.70м</span></p>
-            <p>Ширина <span class="boldText">2.4м</span></p>
-            <p>Объем <span class="boldText">40м<sup><small>3</small></sup></span></p>
-          </div>
-          <img src="./img/cars/4.png" alt="Газель 3-х местная">
-        </div>
-
-        <div class="cars_block">
-          <p class="cars_blockHeader">Валдай <span class="boldText">3-х местная</p>
-          <div class="cars_blockSize">
-            <p>Длина <span class="boldText">3м</span></p>
-            <p>Высота <span class="boldText">1.9м</span></p>
-            <p>Ширина <span class="boldText">2м</span></p>
-            <p>Объем <span class="boldText">11.4м<sup><small>3</small></sup></span></p>
-          </div>
-          <img src="./img/cars/gazel_2.png" alt="Газель 3-х местная">
-        </div>
+        <img src="./img/cars/1.png" alt="Газель 3-х местная">
       </div>
-    
+
+      <div class="cars_block">
+        <p class="cars_blockHeader">Газель <span class="boldText">6-ти местная</span></p>
+        <div class="cars_blockSize">
+          <p>Длина <span class="boldText">4.20м</span></p>
+          <p>Высота <span class="boldText">2.20м</span></p>
+          <p>Ширина <span class="boldText">2м</span></p>
+          <p>Объем <span class="boldText">19м<sup><small>3</small></sup></span></p>
+        </div>
+        <img src="./img/cars/2.png" alt="Газель 6-ти местная">
+      </div>
+
+      <div class="cars_block">
+        <p class="cars_blockHeader">Газель <span class="boldText">3-x местная</span></p>
+        <div class="cars_blockSize">
+          <p>Длина <span class="boldText">2.37м</span></p>
+          <p>Высота <span class="boldText">1.90м</span></p>
+          <p>Ширина <span class="boldText">2м</span></p>
+          <p>Объем <span class="boldText">23м<sup><small>3</small></sup></span></p>
+        </div>
+        <img src="./img/cars/gazel_1.png" alt="Газель 3-x местная">
+      </div>
+
+      <div class="cars_block">
+        <p class="cars_blockHeader">Газель <span class="boldText">6-ти местная</span></p>
+        <div class="cars_blockSize">
+          <p>Длина <span class="boldText">5.20м</span></p>
+          <p>Высота <span class="boldText">2.30м</span></p>
+          <p>Ширина <span class="boldText">2м</span></p>
+          <p>Объем <span class="boldText">23м<sup><small>3</small></sup></span></p>
+        </div>
+        <img src="./img/cars/3.png" alt="Газель 6-ти местная">
+      </div>
+
+      <div class="cars_block">
+        <p class="cars_blockHeader">Валдай <span class="boldText">3-х местная</p>
+        <div class="cars_blockSize">
+          <p>Длина <span class="boldText">6.20м</span></p>
+          <p>Высота <span class="boldText">2.70м</span></p>
+          <p>Ширина <span class="boldText">2.4м</span></p>
+          <p>Объем <span class="boldText">40м<sup><small>3</small></sup></span></p>
+        </div>
+        <img src="./img/cars/4.png" alt="Газель 3-х местная">
+      </div>
+
+      <div class="cars_block">
+        <p class="cars_blockHeader">Валдай <span class="boldText">3-х местная</p>
+        <div class="cars_blockSize">
+          <p>Длина <span class="boldText">3м</span></p>
+          <p>Высота <span class="boldText">1.9м</span></p>
+          <p>Ширина <span class="boldText">2м</span></p>
+          <p>Объем <span class="boldText">11.4м<sup><small>3</small></sup></span></p>
+        </div>
+        <img src="./img/cars/gazel_2.png" alt="Газель 3-х местная">
+      </div>
+    </div>
+
   </section>
   <!-- Services -->
-  <section id="services">
+  <section id="servicesBlock">
     <div class="container">
       <h2 class="headers benefits_header services_header">Услуги</h2>
       <div class="services">
@@ -256,66 +258,73 @@
     </div>
   </section>
   <!-- Price -->
-<section>
-  <div class="container">
-    <h2 class="headers benefits_header">Цены</h2>
-    <div class="price">
-      <div class="price_block">
-        <div class="price_block_header boldText">газель +<br> 2 грузчика</div>
-        <div class="price_block_prices">2700р</div>
-        <p><span class="boldText">2 часа</span><br>(по городу)</p>
+  <section id="priceBlock">
+    <div class="container">
+      <h2 class="headers benefits_header">Цены</h2>
+      <div class="price">
+        <div class="price_block">
+          <div class="price_block_header boldText">газель +<br> 2 грузчика</div>
+          <div class="price_block_prices">2700р</div>
+          <p><span class="boldText">2 часа</span><br>(по городу)</p>
+        </div>
+        <div class="price_block">
+          <div class="price_block_header boldText">газель +<br> 4 грузчика</div>
+          <div class="price_block_prices">3900р</div>
+          <p><span class="boldText">3 часа</span><br>(по городу)</p>
+        </div>
+        <div class="price_block">
+          <div class="price_block_header boldText">газель +<br> 2 грузчика</div>
+          <div class="price_block_prices">3000р</div>
+          <p><span class="boldText">2 часа</span><br>(по городу)</p>
+        </div>
+        <div class="price_block">
+          <div class="price_block_header boldText">газель +<br> 4 грузчика</div>
+          <div class="price_block_prices">4500р</div>
+          <p><span class="boldText">3 часа</span><br>(по городу)</p>
+        </div>
       </div>
-      <div class="price_block">
-        <div class="price_block_header boldText">газель +<br> 4 грузчика</div>
-        <div class="price_block_prices">3900р</div>
-        <p><span class="boldText">3 часа</span><br>(по городу)</p>
-      </div>
-      <div class="price_block">
-        <div class="price_block_header boldText">газель +<br> 2 грузчика</div>
-        <div class="price_block_prices">3000р</div>
-        <p><span class="boldText">2 часа</span><br>(по городу)</p>
-      </div>
-      <div class="price_block">
-        <div class="price_block_header boldText">газель +<br> 4 грузчика</div>
-        <div class="price_block_prices">4500р</div>
-        <p><span class="boldText">3 часа</span><br>(по городу)</p>
+      <p class="subtext">по области цена <span>договорная</span></p>
+    </div>
+  </section>
+  <!-- Reviews -->
+  <section id='reviewsBlock'>
+    <div class="container">
+      <h2 class="headers benefits_header reviews_header">Отзывы</h2>
+      <div class="reviews">
+        <div class="reviews_block">
+          <p>Переезжаем с вашей компанией уже второй раз. Как обычно: пунктуальный водитель, опытные грузчики. Загрузили
+            и разгрузили все аккуратно. Если понадобиться переезжать ещё, снова обратимся к вам</p>
+        </div>
+        <div class="reviews_block">
+          <p>Обращались к вам по рекомендации наших знакомых. Сказали, что все услуги на высшем уровне. И это именно
+            так. Менеджер помогла с выбором газели, так как переезд был большим. Зеркала плотно упаковали, вещи
+            укомплектовали аккуратно. Дальнейшего процветания вам.</p>
+        </div>
+        <div class="reviews_block">
+          <p>Переезжали с Пермякова на Актюбинскую. Все прошло хорошо. Приехали вовремя, все быстро загрузили и
+            выгрузили. Водитель Илья ехал аккуратно. Мы остались довольны.</p>
+        </div>
+        <div class="reviews_block">
+          <p>Рекомендую компанию к перевозке. Быстро, качественно, не дорого. Так держать.</p>
+        </div>
+        <div class="reviews_block">
+          <p>Выражаю благодарность за качественный переезд. Нам нужно было разобрать большую стенку, договорились с
+            менеджером, и грузчики приехали раньше, тем самым мы сэкономили на ожидании газели. Компания старается для
+            людей.</p>
+        </div>
       </div>
     </div>
-    <p class="subtext">по области цена <span>договорная</span></p>
-  </div>
-</section>
-<!-- Reviews -->
-<section id="reviewsBlock">
-  <div class="container">
-    <h2 class="headers benefits_header reviews_header">Отзывы</h2>
-    <div class="reviews">
-      <div class="reviews_block">
-        <p>Переезжаем с вашей компанией уже второй раз. Как обычно: пунктуальный водитель, опытные грузчики. Загрузили и разгрузили все аккуратно. Если понадобиться переезжать ещё, снова обратимся к вам</p>
-      </div>
-      <div class="reviews_block">
-        <p>Обращались к вам по рекомендации наших знакомых. Сказали, что все услуги на высшем уровне. И это именно так. Менеджер помогла с выбором газели, так как переезд был большим. Зеркала плотно упаковали, вещи укомплектовали аккуратно. Дальнейшего процветания вам.</p>
-      </div>
-      <div class="reviews_block">
-        <p>Переезжали с Пермякова на Актюбинскую. Все прошло хорошо. Приехали вовремя, все быстро загрузили и выгрузили. Водитель Илья ехал аккуратно. Мы остались довольны.</p>
-      </div>
-      <div class="reviews_block">
-        <p>Рекомендую компанию к перевозке. Быстро, качественно, не дорого. Так держать.</p>
-      </div>
-      <div class="reviews_block">
-        <p>Выражаю благодарность за качественный переезд. Нам нужно было разобрать большую стенку, договорились с менеджером, и грузчики приехали раньше, тем самым мы сэкономили на ожидании газели. Компания старается для людей.</p>
+  </section>
+  <!-- Footer -->
+  <div class="footer">
+    <div class="container">
+      <div class="footer_block">
+        <p><sup><small>©</small> грузоперевоз.ру 2020</p>
+        <p>Создание сайта <a href="https://www.instagram.com/you_atmosphere_/?igshid=1wa3g85unx7sr">креативное
+            пространство твоя атмосфера</a></p>
       </div>
     </div>
   </div>
-</section>
-<!-- Footer -->
-<div class="footer">
-<div class="container">
-<div class="footer_block">
-  <p><sup><small>©</small> грузоперевоз.ру   2020</p>
-  <p>Создание сайта <a href="https://www.instagram.com/you_atmosphere_/?igshid=1wa3g85unx7sr">youatmos.ru</a></p>
-</div>
-</div>
-</div>
 
 
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
@@ -358,22 +367,22 @@
           {
             breakpoint: 1500,
             settings: {
-            slidesToShow: 3,
-	          slidesToScroll: 1
+              slidesToShow: 3,
+              slidesToScroll: 1
             }
           },
           {
             breakpoint: 1200,
             settings: {
-            slidesToShow: 2,
-	          slidesToScroll: 1
+              slidesToShow: 2,
+              slidesToScroll: 1
             }
           },
           {
             breakpoint: 480,
             settings: {
-            slidesToShow: 1,
-	          slidesToScroll: 1
+              slidesToShow: 1,
+              slidesToScroll: 1
             }
           },
           {
@@ -389,7 +398,7 @@
         autoplay: true,
         autoplaySpeed: 4000,
         prevArrow: '<div class="arrows left"></div>',
-		    nextArrow: '<div class="arrows right"></div>'
+        nextArrow: '<div class="arrows right"></div>'
       });
     });
   </script>

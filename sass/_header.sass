@@ -19,7 +19,7 @@ header
         justify-content: space-between
         align-items: center
         a
-            font-size: 25px
+            font-size: 20px
             color: $orange
             text-decoration: none
             font-family: $stolzl_reg
@@ -49,7 +49,7 @@ header
             right: -46px
             top: 50%
             transform: translateY(-50%)
-        &:nth-child(5)
+        &:nth-child(6)
             &::after
                 display: none     
                 
@@ -83,6 +83,7 @@ header
     .header
         &_phone
             justify-content: flex-end
+            width: 200px
             img
                 display: none
     .navList
@@ -91,14 +92,16 @@ header
             justify-content: space-between
             li
                 margin: 0
+                &::after
+                    right: -19px
 @media (max-width: 768px)
     .header
         img
-            display: none
+            width: 30%
         &_phone 
             width: 50%  
             a
-                font-size: 22px
+                font-size: 20px
         &_menu
             position: relative
             width: 60px
@@ -107,6 +110,7 @@ header
             outline: none
             background: transparent
             transition: 0.5s
+            order: -1
             span
                 position: absolute
                 width: 40px
@@ -155,8 +159,8 @@ header
         background: rgba(0, 0, 0, 0.9)
         &_li
             &::after
-                right: 105%
-            &:nth-child(5)
+                right: 105% !important
+            &:nth-child(6)
                 &:after
                     display: block    
                     
@@ -168,4 +172,10 @@ header
 @media (max-width: 480px)
     .header
         &_phone
-            width: 80%
+            width: 45%
+            a
+                font-size: 16px 
+        &_menu
+            width: 40px  
+        img
+            width: 33%          
