@@ -1,0 +1,70 @@
+.price
+    display: flex
+    flex-wrap: nowrap
+    &_block
+        margin-top: 40px
+        border-right: 1px solid $orange
+        width: 25%
+        text-align: center
+        color: #0c1239
+        border-bottom: 1px solid $orange
+        p
+            font-family: $stolzl_light
+            margin-bottom: 20px
+            font-size: 20px
+        &_header
+            font-size: 20px
+            position: relative
+            text-transform: uppercase
+            margin-bottom: 30px
+            &::after
+                position: absolute
+                content: ''
+                width: 50%
+                height: 1px
+                background-color: $orange
+                bottom: -27%
+                left: 50%
+                transform: translateX(-50%)
+        &_prices        
+            font-size: 35px
+            font-family: $stolzl_bold
+            width: 100%
+            color: $orange
+            background-color: #0c1239
+            padding-top: 10px
+            padding-bottom: 10px
+            margin-bottom: 20px
+        &:nth-child(4)
+            border-right: none
+.subtext  
+    margin-top: 20px  
+    color: #0c1239
+    font-family: $stolzl_light
+    font-size: 18px
+    span
+        color: $orange 
+
+@media (max-width: 992px)  
+    .price
+        &_block
+            &_header
+                font-size: 16px
+            &_prices
+                font-size: 25px
+            p
+                font-size: 16px      
+    .subtext
+        font-size: 16px                                 
+@media (max-width: 768px)     
+    .price
+        &_block
+            &_prices
+                font-size: 22px  
+@media (max-width: 560px)   
+    .price
+        flex-wrap: wrap
+        &_block
+            width: 50%
+            &:nth-child(2)
+                border-right: none                       

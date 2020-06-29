@@ -1,9 +1,11 @@
 .cars
     display: flex
     flex-wrap: wrap
+    justify-content: center
+    width: 100%
     &_block
         margin-top: 30px
-        width: 50%
+        width: 26%
         &Header
             text-align: center
             font-family: $stolzl_light
@@ -14,7 +16,7 @@
             margin: 0 auto
             display: grid
             grid-template-columns: 1fr 1fr
-            width: 430px
+            width: 400px
             margin-bottom: 30px
             &::after
                 position: absolute
@@ -23,14 +25,15 @@
                 height: 50px
                 background-color: $orange
                 top: 50%
-                left: 45%
+                left: 44%
                 transform: translateY(-50%)
             p
                 font-family: $stolzl_light
-                font-size: 25px
+                font-size: 22px
         img
             display: block
-            margin: 0 auto        
+            margin: 0 auto
+            width: 395px        
 .boldText
     font-family: $stolzl_bold
     color: $colorHeader 
